@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const connectdb = async()=>{
     try {
-        const connect = await mongoose.connect("mongodb+srv://vipuljain8441:abcd%401234@cluster0.1vs8i5u.mongodb.net/socialDB",{
+        const connect = await mongoose.connect("process.env.MONGODB_URI",{
             useNewUrlParser:true,
             useUnifiedTopology:true,
         });
